@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>tittle</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: #0096dd;
+            margin: 0 auto;
+            position: relative;
+            top: 0;
+            animation: mymove 5s;
+            -moz-animation: mymove 5s;	/* Firefox */
+            -webkit-animation: mymove 5s;	/* Safari 和 Chrome */
+            -o-animation: mymove 5s;    /* Opera */
+        }
+        @keyframes mymove
+        {
+            from {top:0;}
+            to {top:200px;}
+        }
+
+        @-moz-keyframes mymove /* Firefox */
+        {
+            from {top:0;}
+            to {top:200px;}
+        }
+
+        @-webkit-keyframes mymove /* Safari 和 Chrome */
+        {
+            from {top:0;}
+            to {top:200px;}
+        }
+
+        @-o-keyframes mymove /* Opera */
+        {
+            from {top:0;}
+            to {top:200px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>
